@@ -13,6 +13,12 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 
+namespace_imports = [
+    'hardware/qcom-caf/msm8996',
+    'hardware/xiaomi',
+    'vendor/xiaomi/msm8953-common',
+]
+
 blob_fixups: blob_fixups_user_type = {
     ('vendor/lib/libarcsoft_high_dynamic_range.so', 'vendor/lib/libremosaic_wrapper.so', 'vendor/lib/libremosaiclib.so', 'vendor/lib/libmmcamera_hdr_gb_lib.so'): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
@@ -29,6 +35,7 @@ module = ExtractUtilsModule(
     'ysl',
     'xiaomi',
     blob_fixups=blob_fixups,
+    namespace_imports=namespace_imports,
 )
 
 if __name__ == '__main__':
