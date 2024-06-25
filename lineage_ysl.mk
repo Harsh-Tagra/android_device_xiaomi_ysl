@@ -11,6 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit from ysl device
+AB_OTA_UPDATER := false
 $(call inherit-product, device/xiaomi/ysl/device.mk)
 
 # Inherit some common LineageOS stuff.
