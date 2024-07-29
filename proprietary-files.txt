@@ -1,4 +1,6 @@
 # Not appended blobs from ysl-user 9 PKQ1.181203.001 V12.0.2.0.PEFMIXM release-keys
+# daisy: daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
+# onc: onc-user 10 QKQ1.191008.001 V12.5.1.0.QFLCNXM release-keys
 
 # Audio ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
@@ -574,7 +576,7 @@ vendor/lib/libmmcamera_ysl_s5k5e8_aux_ofilm_i_eeprom.so
 vendor/lib/libmmcamera_ysl_s5k5e8_aux_sunny_ii.so
 vendor/lib/libmmcamera_ysl_s5k5e8_aux_sunny_ii_eeprom.so
 
-# Consumerir - from onc-user 10 QKQ1.191008.001 V12.5.1.0.QFLCNXM release-keys
+# Consumerir - from onc
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.msm8953.so|7945c6476a3fa04d9cee4fe60e188d342fbb1bfb|dbe0f09e8fb78ee8204c3c2ab43d0fda3a03e91d
 
 # Fingerprint
@@ -584,12 +586,12 @@ vendor/lib/libgf_ca.so
 vendor/lib/libgf_hal.so
 vendor/lib/libvendor.goodix.hardware.fingerprint@1.0-service.so
 
-# Gatekeeper - from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
+# Gatekeeper - from daisy
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|bea6d682011b465a08b9085f7b5e69b965743eee
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|4bc9f319b3a62f3d8e3e0c539b577027c263e7df
 
-# Keymaster - from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
+# Keymaster - from daisy
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|ac0aabf396888c9dc8b6dc23291e190daa943e24
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|95d84ef473d4cb733297cbf01c5d1e18bb3325d4
