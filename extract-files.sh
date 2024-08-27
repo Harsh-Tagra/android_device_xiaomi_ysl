@@ -19,12 +19,16 @@ function blob_fixup() {
             "${SIGSCAN}" -p "00 c6 8f e2 4a ca 8c e2 b0 fa bc e5" -P "00 c6 8f e2 1f 20 03 d5 b0 fa bc e5" -f "${2}"
             "${SIGSCAN}" -p "78 47 c0 46 00 c0 9f e5 0f f0 8c e0 e0 37 fc ff" -P "78 47 c0 46 1f 20 03 d5 0f f0 8c e0 e0 37 fc ff" -f "${2}"
             ;;
+        vendor/lib/libarcsoft_high_dynamic_range.so)
+            ;&
+        vendor/lib/libremosaic_wrapper.so)
+            ;&
+        vendor/lib/libremosaiclib.so)
+            ;&
+        vendor/lib/libmmcamera_hdr_gb_lib.so)
+            "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
+            ;;
     esac
-
-    # For all ELF files
-    if [[ "${1}" =~ ^.*(\.so|\/bin\/.*)$ ]]; then
-        "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
-    fi
 }
 
 # If we're being sourced by the common script that we called,
