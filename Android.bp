@@ -1,5 +1,5 @@
 soong_namespace {
     imports: [
-        "vendor/fingerprint/opensource/interfaces",
+        "hardware/xiaomi",
     ],
 }
