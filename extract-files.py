@@ -28,6 +28,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libvendor.goodix.hardware.fingerprint@1.0.so', 'vendor.goodix.hardware.fingerprint@1.0.so'),
     ('vendor/lib/libarcsoft_high_dynamic_range.so', 'vendor/lib/libremosaic_wrapper.so', 'vendor/lib/libremosaiclib.so', 'vendor/lib/libmmcamera_hdr_gb_lib.so'): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    'vendor/lib/libmmcamera_tuning.so': blob_fixup()
+        .remove_needed('libmm-qcamera.so'),
     'vendor/lib/libgf_hal.so': blob_fixup()
         .sig_replace('00 c6 8f e2 4a ca 8c e2 b0 fa bc e5', '00 c6 8f e2 1f 20 03 d5 b0 fa bc e5')
         .sig_replace('78 47 c0 46 00 c0 9f e5 0f f0 8c e0 e0 37 fc ff', '78 47 c0 46 1f 20 03 d5 0f f0 8c e0 e0 37 fc ff'),
