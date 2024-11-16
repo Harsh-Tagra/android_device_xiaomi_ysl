@@ -577,7 +577,7 @@ vendor/lib/libmmcamera_ysl_s5k5e8_aux_sunny_ii.so
 vendor/lib/libmmcamera_ysl_s5k5e8_aux_sunny_ii_eeprom.so
 
 # Consumerir - from onc
-vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.msm8953.so|7945c6476a3fa04d9cee4fe60e188d342fbb1bfb|dbe0f09e8fb78ee8204c3c2ab43d0fda3a03e91d
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.msm8953.so;FIX_SONAME|7945c6476a3fa04d9cee4fe60e188d342fbb1bfb|6cc44ebfea20c0e235db23d3486a08e44b127845
 
 # Fingerprint
 vendor/lib/hw/fingerprint.default.so:vendor/lib/hw/fingerprint.goodix.default.so;FIX_SONAME
