@@ -38,8 +38,7 @@ PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
 
 # Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_msm8953-32
+$(call soong_config_set,xiaomi_hardware_biometrics,run_32bit,true)
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/ysl/ysl-vendor.mk)
