@@ -21,8 +21,7 @@ TARGET_SCREEN_WIDTH := 720
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/xiaomi
+    $(LOCAL_PATH)
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
